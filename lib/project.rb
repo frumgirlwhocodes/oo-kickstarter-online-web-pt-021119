@@ -7,9 +7,10 @@ class Project
     @title=title
     @backers= []
   end 
+  binding.pry
   def add_backer(backer)
     @backers << backer 
     backer.backed_projects << self 
   end 
-  binding.pry  
+   
 end 
